@@ -72,7 +72,7 @@ I want to specifically talk about diversity and inclusion which I know no longer
 
 So one thing I have seen before, is hiring women for the sake of hiring women and then abandoning them and letting them figure things out without any support. Often there is no malice in it, teams are stretched thin, stressed out and individual contributors are not allowed to allocate the time necessary to spend with new hires. This then leads to a lot of imposter syndrome and self doubt, a lot of internalization about failing in the industry and also withdrawal. Then people would get mad about why the quota even exists and "why are they forced to hire women". This issue is really complex and there is a lot more to say about it. Not feeling like belonging and then withdrawing doesn't only affect women, but I have seen female coworkers who were set up to fail leave the industry, even though they were capable and brought a lot to the team.
 
-Investing in observability is also a strong use case for onboarding new people faster, but the already experienced and confident new joiners will have an easier time figuring fragmented systems out and pushing through the pain, but they will certainly be grateful if they don't have to.
+Investing in observability is also a strong use case for onboarding new people faster. The already experienced and confident new joiners will have an easier time figuring fragmented systems out and pushing through the pain, but they will certainly be grateful if they don't have to. Getting onboarded in a matter of weeks is always better than in a matter of months.
 
 ### Personal anecdote
 
