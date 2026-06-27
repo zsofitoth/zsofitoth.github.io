@@ -74,7 +74,7 @@ So one thing I have seen before, is hiring women for the sake of hiring women an
 
 Investing in observability is also a strong use case for onboarding new people faster, but the already experienced and confident new joiners will have an easier time figuring fragmented systems out and pushing through the pain, but they will certainly be grateful if they don't have to.
 
-### Personal Anecdote
+### Personal anecdote
 
 Some time ago, I worked with a tech lead who liked to move fast, break things and not write tests. Once I confronted him about not writing any tests and things constantly breaking in production and he rebuffed me by saying: overtesting is bad and slows the pipelines down. He thought the same about typechecks, so he removed the build step from the CI/CD pipeline and each time I pulled the code it was full of TypeScript build errors. I have to also add we had an okay observability setup, so at least we noticed when critical journeys were broken. Nonetheless, it wasn't nice when the same thing broke prod 3 times in different ways in a single day because adding tests was an afterthought.
 
