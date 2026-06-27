@@ -7,7 +7,7 @@ description: "Why observability still matters in 2026 — a technical case for i
 
 ## Background
 
-I am spending some time reflecting on software engineering fundamentals by reading books and thinking back on my time spent in the industry developing software. I wanted to start with observability (a topic that is very dear to my heart) so I picked up a book called [Observability Engineering](https://www.oreilly.com/library/view/observability-engineering/9781492076438/) (1st edition) in the hope that it would help me articulate some of my points better and simply to learn more about observability.
+I am spending some time reflecting on software engineering fundamentals by reading books and thinking back on my time spent in the industry developing software. I wanted to start with observability (a topic that is very dear to my heart) so I picked up a book called [Observability Engineering](https://www.oreilly.com/library/view/observability-engineering/9781492076438/) (1st edition) in the hope that it would help me articulate some of my points better and simply to learn more about the subject.
 
 ## Motivation
 
