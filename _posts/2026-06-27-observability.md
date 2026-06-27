@@ -2,7 +2,7 @@
 layout: post
 title: "Observability"
 date: 2026-06-27
-description: "Why observability still matters in 2026 — and why it's as much about team culture as it is about telemetry."
+description: "Why observability still matters in 2026 — a technical case for investigating production deeply, and why that same capability dissolves the 'hero culture' that makes teams fragile and exclusionary."
 ---
 
 ## Motivation
