@@ -76,7 +76,7 @@ Investing in observability is also a strong use case for onboarding new people f
 
 ### Personal anecdote
 
-Some time ago, I worked with a tech lead who liked to move fast, break things and not write tests. Once I confronted him about not writing any tests and things constantly breaking in production and he rebuffed me by saying: overtesting is bad and slows the pipelines down. He thought the same about typechecks, so he removed the build step from the CI/CD pipeline and each time I pulled the code it was full of TypeScript build errors. I have to also add we had an okay observability setup, so at least we noticed when critical journeys were broken. Nonetheless, it wasn't nice when the same thing broke prod 3 times in different ways in a single day because adding tests was an afterthought.
+Some time ago, I worked with a tech lead who liked to move fast, break things and not write tests. Once I confronted him about not writing any tests and things constantly breaking in production and he rebuffed me by saying: overtesting is bad and slows the pipelines down. He thought the same about typechecks, so he removed the build step from the CI/CD pipeline and each time I pulled the code it was full of Typescript build errors. I have to also add we had an okay observability setup, so at least we noticed when critical journeys were broken. Nonetheless, it wasn't nice when the same thing broke prod 3 times in different ways in a single day because adding tests was an afterthought.
 
 So what is overtesting and is it bad? It refers to adding too many tests where some of them might not be useful. It is very much real, but I used to laugh it off by saying, you can barely convince people to write any tests so this only exists on paper, but not in reality.
 
