@@ -16,7 +16,7 @@ There is also a lot of discourse around developing with coding agents and in gen
 
 To me one of the bottlenecks even before genAI was verification especially in production which is something that was never trivial, except we produced way less in quantity so there was a ceiling to what we needed to verify and how many bugs a week we shipped to production. Also comprehension and the ability to keep up with the changes and the state of the codebase, especially if one worked on a product long enough kept teams afloat. Even if I was new and hadn't yet built the mental models or acquired the necessary domain knowledge fast, chances were someone else in the team would surely know how to put out a fire in production and save our asses. Don't get me wrong, this was highly annoying and stressful in the good old days as well, but things have been speeding up and more lines of code are being added than ever before. I'm assuming if developers are no longer spending their time on shipping features (because agents are doing that) then that must mean the tradeoffs we've always made when it comes to quality might have to be rethought as well. And that would mean we get to go to places we have rarely been before and we have the chance to raise the bar.
 
-With that being said let's talk about why observability is relevant and worth caring about.
+If verification in production is one of the bottlenecks left, then the real question is how you actually do it well — and that's where observability comes in.
 
 ## Observability vs Monitoring
 
