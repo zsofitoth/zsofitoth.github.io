@@ -7,18 +7,20 @@ description: "Why observability still matters in 2026 — a technical case for i
 
 ## Background
 
-I am spending some time reflecting on software engineering fundamentals by reading books and thinking back on my time spent in the industry developing software. I wanted to start with observability (a topic that is very dear to my heart) so I picked up a book called [Observability Engineering](https://www.oreilly.com/library/view/observability-engineering/9781492076438/) (1st edition) in the hope that it would help me articulate some of my points better and simply to learn more about the subject.
+I am spending some time reflecting on software engineering fundamentals by reading books and thinking back on my time spent in the industry developing software. I wanted to start with observability so I picked up a book called [Observability Engineering](https://www.oreilly.com/library/view/observability-engineering/9781492076438/) (1st edition) in the hope that it would help me articulate some of my points better and simply to learn more about the subject.
 
 ## Motivation
 
-Quality should still be important in 2026. In my experience many organizations are struggling with the concept of quality and how to best ensure it. The discussion is always about how to keep delivering value and move fast and how much we should invest in quality while still staying pragmatic. A lot of people treat this as some big tradeoff where there is no right answer, which I partially agree with. Testing more, being Agile, hiring QA engineers, investing in observability, defensive programming, these are all areas where quality can be ensured not in a mutually exclusive way. Some are constrained by budget, others are by time to delivery. 
+Quality should still be important in 2026. In my experience many organizations are struggling with the concept of quality and how to best ensure it. The discussion is always about how to keep delivering value and move fast and how much we should invest in quality while still staying pragmatic. A lot of people treat this as some big tradeoff where there is no right answer, which I partially agree with. Testing more, being agile, hiring QA engineers, investing in observability, defensive programming, these are all areas where quality can be ensured not in a mutually exclusive way. Some are constrained by budget, others are by time to delivery. 
 
-Verification is an important part of quality, and in production it was never trivial. This is why I find the discourse around developing with coding agents and in general about "where we are headed" hard to ignore. I would like to firstly say, I am not even gonna pretend like I understand where we are headed nor will I attempt to predict where we'll be in 6 months. However, I keep seeing a lot of these posts:
+Verification is an important part of quality, and in production it was never trivial. Production is where verification actually means the most, because it's the only place that's real. Staging, CI, and pre-prod are all approximations that lack the things that actually break systems (real traffic patterns, real data volumes).
+
+This is why I find the discourse around developing with coding agents and in general about "where we are headed" hard to ignore. I would like to firstly say, I am not even gonna pretend like I understand where we are headed nor will I attempt to predict where we'll be in 6 months. However, I keep seeing a lot of these posts:
 > "Now that coding is _largely_ solved, the bottleneck moves to [insert LinkedIn post here about where the bottleneck moves to]"
 
-The bottlenecks are the same as they've always been, but we used to produce way less in quantity so there was a ceiling to what we needed to verify and how many bugs or half-baked features we shipped to production a week. Also comprehension and the ability to keep up with the changes and the state of the codebase, especially if one worked on a product long enough kept teams afloat. Even if I was new and hadn't yet built the mental models or acquired the necessary domain knowledge fast, chances were someone else in the team would surely know how to put out a fire in production. Don't get me wrong, this was imperfect in the good old days as well, but things have been speeding up and it's become unsustainable. If agents are writing more code faster, there is more to verify than ever and more weird states for the system to end up in. That must mean the tradeoffs we've always made when it comes to quality might have to be rethought.
+The bottlenecks are the same as they've always been, but we used to produce way less in quantity so there was a ceiling to what we needed to verify and how many bugs or half-baked features we shipped to production in a week. Also comprehension and the ability to keep up with the changes and the state of the codebase, especially if one worked on a product long enough kept teams afloat. Even if I was new and hadn't yet built the mental models or acquired the necessary domain knowledge fast, chances were someone else in the team would surely know how to put out a fire in production. Don't get me wrong, this was already failing in the past. The system always ended up in states nobody anticipated, but they came slowly enough that institutional knowledge could keep pace, and speeding up with agents has made this unsustainable. So I would argue the tradeoffs we've always made when it comes to quality may need rethinking.
 
-So if verification in production is one of the bottlenecks left, then the real question is how you actually do it well. That's where observability comes. Getting it right mattered 10 years ago, and it matters even more today.
+Since verification in production is hard, the real question is how you actually do it well. That's where observability comes in. Getting it right mattered 10 years ago, and it matters even more today.
 
 ## Observability vs Monitoring
 
@@ -58,11 +60,11 @@ One thing to note about the volume of structured events though, at scale you can
 
 ## Why care about observability?
 
-If the motivation section didn't convince you then I will continue by saying observability and monitoring positively contribute to continuous delivery (see this [DORA article](https://dora.dev/capabilities/monitoring-and-observability/)). The book also makes the case that caring about culture and people is a good reason to invest in observability. I have my own take on this, I've seen firsthand how having observability set up makes all the difference for diversity and inclusion.
+In the Motivation section I've already hinted observability helps with verification in production. Verification-in-production is only tractable if you can interrogate real behavior, you do that by watching actual behavior through high-cardinality, high-dimensionality telemetry and being able to ask questions you didn't pre-register. The book also makes the case that caring about culture and people is a good reason to invest in observability. I have my own take on this, I've seen firsthand how having observability set up makes all the difference for diversity and inclusion.
+
+_Disclaimer: the following sections are from my experience in the industry, not from studies._
 
 ### Culture
-
-_Disclaimer: this section is from my experience in the industry, not from studies._
 
 What I have seen many times is that culture drives quality, because it drives engagement. Engaged people stay, notice things, own problems, don't check out, but disengaged people do the bare minimum. When an environment exists where team members feel a certain sense of belonging and they feel like they are succeeding and contributing, it is less likely they will start coping by emotionally and mentally checking out. 
 
