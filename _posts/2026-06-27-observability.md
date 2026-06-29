@@ -11,7 +11,7 @@ I am spending some time reflecting on software engineering fundamentals by readi
 
 ## Motivation
 
-Quality should still be important in 2026. In my experience many organizations are struggling with the concept of quality and how to best ensure it. The discussion is always about how to keep delivering value and move fast and how much we should invest in quality while still staying pragmatic. A lot of people treat this as a tradeoff where there is no right answer, which I partially agree with. Testing more, being agile, hiring QA engineers, investing in observability, defensive programming, these are all areas where quality can be ensured not in a mutually exclusive way. Some are constrained by budget, others are by time to delivery. 
+Quality should still be important in 2026. In my experience many organizations are struggling with the concept of quality and how to best ensure it. The discussion is always about how to keep delivering value and move fast and how much we should invest in quality while still staying pragmatic. A lot of people treat this as a tradeoff where there is no right answer, which I agree with to a point. Testing more, being agile, hiring QA engineers, investing in observability, defensive programming, these are all areas where quality can be ensured not in a mutually exclusive way. Some are constrained by budget, others are by time to delivery and not all of them are worth it in every case.
 
 Verification is an important part of quality, and in production it was never trivial. Production is where verification actually means the most, because it's the only place that's real. Staging, CI, and pre-prod are all approximations that lack the things that actually break systems (real traffic patterns, real data volumes).
 
